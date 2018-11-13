@@ -4,3 +4,7 @@
 
 
 <p><%= link_to "Edit task", edit_task_path(@task) %></p>
+
+
+<%= link_to 'Destroy', task_path(@task), method: :delete, data: { confirm: "Are you sure?" } %>
+
